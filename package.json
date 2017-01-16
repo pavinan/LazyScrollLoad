@@ -13,5 +13,7 @@
   },
   "homepage": "https://github.com/pavinan/LazyScrollLoad#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
   }
 }

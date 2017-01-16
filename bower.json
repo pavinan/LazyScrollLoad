@@ -1,21 +1,13 @@
 {
   "name": "lazyscrollload",
   "description": "\"# LazyScrollLoad\"",
-  "main": "",
   "authors": [
     "Bharat"
   ],
   "license": "ISC",
   "homepage": "https://github.com/pavinan/LazyScrollLoad",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
+  "devDependencies": {
     "jquery": "^3.1.1"
   }
 }
