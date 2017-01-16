@@ -1,0 +1,17 @@
+{
+  "name": "lazyscrollload",
+  "version": "1.0.0",
+  "description": "\"# LazyScrollLoad\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavinan/LazyScrollLoad.git"
+  },
+  "author": "Bharat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavinan/LazyScrollLoad/issues"
+  },
+  "homepage": "https://github.com/pavinan/LazyScrollLoad#readme",
+  "devDependencies": {
+  }
+}
