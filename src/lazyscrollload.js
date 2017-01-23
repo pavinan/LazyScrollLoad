@@ -2,10 +2,18 @@
 (function ($) {
 
     var EventKeys = {
-        OnScrollReachedEnd : "OnScrollReachedEnd"
+        OnScrollReachedEnd: "OnScrollReachedEnd"
     };
 
-    $.fn.lazyScrollLoad = function () {
+    var options = {
+        throttleTimeout: 300
+    }
+
+    $.fn.lazyScrollLoad = function (settings) {
+        if (typeof settings == "object") {
+            $.extend(options, settings);
+        }
+
         var elements = this;
         return elements.each(function () {
             var $el = $(this);
@@ -14,7 +22,7 @@
                 if (this.scrollHeight - this.scrollTop === this.clientHeight) {
                     $this.trigger(EventKeys.OnScrollReachedEnd);
                 }
-            }, 300));
+            }, options.throttleTimeout));
         })
     };
 })(jQuery)
