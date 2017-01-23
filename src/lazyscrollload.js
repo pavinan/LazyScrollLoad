@@ -1,5 +1,10 @@
 
 (function ($) {
+
+    var EventKeys = {
+        OnScrollReachedEnd : "OnScrollReachedEnd"
+    };
+
     $.fn.lazyScrollLoad = function () {
         var elements = this;
         return elements.each(function () {
@@ -7,7 +12,7 @@
             $el.on('scroll', _.throttle(function () {
                 var $this = $(this);
                 if (this.scrollHeight - this.scrollTop === this.clientHeight) {
-                    console.log(true)
+                    $this.trigger(EventKeys.OnScrollReachedEnd);
                 }
             }, 300));
         })
